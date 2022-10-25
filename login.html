@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>BIGMAX</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">BIG-MAX</a></div>
+        <div class="hamburger-menu">
+            <label for="hamburger">&#9776</label>
+            <input type="checkbox" id="hamburger">
+        </div>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Suche nach Produkten oder Marken">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+        <nav class="menu-bar">
+            <ul>
+                <li class="active"><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Sign-Up/Login<i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+
+    <form class="login-form" action="">
+        <fieldset>
+            <legend>
+                Login:
+            </legend>
+
+            <label for="login">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your@email"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+            <a class="forget-password" href="#">Forget your password</a><br>
+
+            <button class="login"><a id="login" href="#">Login!</a></button>
+
+            <button class="sign-up"><a id="sign-up" href="sign-up.html" target="_blank">Sign-up now!</a></button>
+
+        </fieldset>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="logo"><a href="index.html">BIG-MAX</a></div>
+            <div class="kundenservice">
+                <h3>Customer Service</h3>
+                <p class="footer-p"><a href="#">FAQ</a></p>
+                <p class="footer-p"><a href="#">Shipping</a></p>
+                <p class="footer-p"><a href="#">Payment options</a></p>
+            </div>
+
+            <div class="about-big-max">
+                <h3>About BIG-MAX</h3>
+                <p class="footer-p"><a href="#">About Big-Max</a></p>
+                <p class="footer-p"><a href="#">Brand overview</a></p>
+                <p class="footer-p"><a href="#">Cookies</a></p>
+                <p class="footer-p"><a href="#">Privacy</a></p>
+                <p class="footer-p"><a href="#">Refer Friends</a></p>
+            </div>
+
+            <div class="follow-us">
+                <h3>Follow US</h3>
+                <p class="footer-p"><a href="#">Instagram</a></p>
+                <p class="footer-p"><a href="#">Facebook</a></p>
+                <p class="footer-p"><a href="#">Youtube</a></p>
+                <p class="footer-p"><a href="#">Newsletter</a></p>
+            </div>
+
+        </div>
+
+        <div class="payment-options">
+            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href="#"><i class="fa-brands fa-paypal"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+            <a href="#"><i class="fa-brands fa-dhl"></i></a>
+        </div>
+    </footer>
+    <p class="copyright">Copyright &copy; 2007 GIG-MAX.All Rights Reserved</p>
+</body>
+</html>

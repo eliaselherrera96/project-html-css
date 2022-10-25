@@ -1,0 +1,1266 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Maven+Pro&family=Noto+Sans&family=Open+Sans&family=Oswald:wght@200;400;600&family=Roboto:wght@300&family=Work+Sans:wght@700&display=swap');
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESKTOP FIRST */
+
+body{
+    width: 100vw;
+    padding: 20px;
+    background-image: url(/images/budy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* Header start */
+
+header{
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to right, red, black);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 3px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 5rem;
+    color: black;
+}
+
+input[type="checkbox"]{
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+}
+
+label[for="hamburger"], input[type="checkbox"]{
+    display: none;
+}
+
+/* .hamburger-menu{
+    display: none;
+} */
+
+/* input[type="checkbox"]:checked ~ .hamburger-menu{
+    display: block;
+} */
+
+.search-box #search{
+    height: 35px;
+    width: 20vw;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-box .fa-magnifying-glass{
+    padding: 6px;
+    color: white;
+    font-size: 2.2rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+    left: -2px;
+}
+
+.search-box #search:focus{
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 1px 1px 1px 1px black;
+    
+}
+
+.search-box .fa-magnifying-glass:hover{
+    color: red;
+    box-shadow: 1px 1px 0px 0px black;
+}
+
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li{
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+.menu-bar ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar ul .active{
+    background-color: black;
+    border-radius: 3px;
+}
+
+.menu-bar ul .active .fa-house{
+    margin-right: 4px;
+    font-size: 2rem;
+}
+
+.menu-bar ul li .fa-user{
+    margin-left: 4px;
+    font-size: 2rem;
+}
+
+.menu-bar ul li:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.menu-bar ul li a:hover{
+    color: red;
+}
+
+
+/* Header end */
+
+
+
+/* About start */
+
+.about{
+    width: 70%;
+    margin: 20px auto;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(4px);
+    line-height: 30px;
+}
+
+.about img{
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 40px;
+    background-position: center;
+    object-fit: cover;
+}
+
+/* About end */
+
+
+/* Contact start */
+
+.contact-table{
+    width: 70%;
+    margin: 10% auto;
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.contact-table h2{
+    margin-bottom: 30px;
+    text-align: left;
+    color: red;
+    font-size: 30px;
+}
+
+.contact-table table{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+.contact-table table th, td{
+    border: 1px solid white;
+}
+
+.contact-table table tr td:nth-child(2){
+    text-align: center;
+}
+
+.contact-table table tr td:nth-child(3){
+    text-align: center;
+}
+
+.contact-table table tr td a{
+    color: white;
+}
+
+.contact-table table tr td a:hover{
+    color: red;
+}
+
+
+/* Contact end */
+
+
+
+/* Login-Form Start*/
+
+.login-form{
+    width: 60%;
+    margin: 10% auto;
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.login-form fieldset{
+    padding: 20px;
+    border-right: none;
+    border-left: none;
+}
+
+.login-form legend{
+    font-size: 30px;
+    color: red;
+}
+
+.login-form label{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600; 
+}
+
+.login-form input{
+    width: 30%;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid red;
+    background: transparent;
+    color: white;
+}
+
+.login-form input:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px 0px red;
+    font-size: 16px;
+}
+
+.login-form .forget-password{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.login-form .forget-password:hover{
+    color: white;
+    font-weight: 600;
+}
+
+.sign-up, .login{
+    margin-top: 20px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid red;
+}
+
+.sign-up{
+    margin-left: 20px;
+}
+
+#sign-up, #login{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#sign-up{
+    color: red;
+}
+
+.login:hover, .sign-up:hover{
+    
+    box-shadow: 1px 1px 1px 0 red;
+}
+
+/* Login-Form End*/
+
+
+
+
+/* Sign-up Form start */
+
+.sign-up-form{
+    width: 60%;
+    margin: 5% auto;
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.sign-up-form fieldset{
+    padding: 20px;
+    border-right: none;
+    border-left: none;
+}
+
+.sign-up-form .form-titel{
+    font-size: 30px;
+    color: red;
+}
+
+.sign-up-form label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sign-up-form input{
+    margin: 10px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid red;
+    background: transparent;
+    color: white;
+}
+
+.sign-up-form input:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px 0px red;
+    font-size: 16px;
+}
+
+#birthday{
+    margin-left: 25px;
+}
+
+#address{
+    padding: 0 0 10px 0;
+}
+
+#address .legend-address{
+    font-size: 20px;
+    color: red;
+}
+
+.sign-up-form #address input{
+    margin-right: 10px;
+}
+
+.sign-up-form #address select{
+    margin: 50px 0 0 5px;
+    height: 25px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+}
+
+.sign-up-form #address select:focus{
+    outline: none;
+    outline: none;
+    box-shadow: 1px 1px 1px 0px red;
+    font-size: 16px;
+    color: red;
+}
+
+#postal-code, #house-number{
+    width: 70px;
+}
+
+.sign-up-form #phone-number{
+    margin-left: 66.5px;
+}
+
+.sign-up-form #email{
+    margin-left: 132.5px;
+}
+
+.sign-up-form #password{
+    margin-left: 101px;
+}
+
+.newsletter span{
+    font-size: 15px;
+}
+
+.newsletter label[for="no"]{
+    margin-left: 10px;
+}
+
+#yes, #no{
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+
+.sign-up-form .submit{
+    margin: 20px 10px 0 0;
+    padding: 5px;
+    font-size: 15px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid red;
+}
+
+.sign-up-form .submit a{
+    text-decoration: none;
+    color: white;
+}
+
+.sign-up-form .submit:hover{
+    box-shadow: 1px 1px 1px 0 red;
+    font-weight: 600;
+}
+
+/* Sign-up Form end */
+
+
+
+/*  Main start */
+
+.main-container{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    color: white;
+    grid-template-columns: 250px repeat(4, 1fr) 50px;
+    grid-template-rows: repeat(6, 33vh);
+    grid-template-areas:
+    "article-1 product-1 product-2 product-3 product-4 ."
+    "aside1 product-5 product-6 product-7 product-8 aside2"
+    "aside1 product-9 product-10 product-11 product-12 aside2"
+    "aside1 product-13 product-14 product-15 product-16 ."
+    "aside1 product-17 product-18 product-19 product-20 ."
+    ". product-21 product-22 product-23 . .";
+    gap: 20px;
+}
+
+.main-header{
+    width: 20%;
+    margin: 40px 16%;
+    color: red;
+    font-size: 30px;
+}
+
+.product-number{
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-number::after{
+    content: "\f0d7";
+    margin-left:5px;
+    color: white;
+}
+
+input[type="checkbox"]{
+    width: 200px;
+    height: 60px;
+    z-index: 5;
+}
+
+label[for="arrow-up"] i{
+    color: white;
+    font-size: 50px;
+}
+
+label[for="arrow-down"] i{
+    color: white;
+    font-size: 50px;
+} 
+
+label[for="arrow-up"], label[for="arrow-down"], input[type="checkbox"]{
+    display: none;
+} 
+
+.hamburger-menu{
+    display: none;
+} 
+
+main .main-container .article-1{
+    grid-area: article-1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    background-image: linear-gradient(160deg, black ,red);
+    color: white;
+    border-radius: 4px;
+}
+
+main .main-container .article-1 h4 span{
+    color: red;
+}
+
+main .main-container .article-1 h4{
+    margin: 40px 0 40px 0;
+}
+
+main .main-container .article-1 input{
+    margin-top: 30px;
+    border: none;
+    height: 40px;
+}
+
+main .main-container .article-1 input:focus{
+    outline: none;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+main .main-container .aside-1{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+    background-image: linear-gradient(160deg, black ,red);
+    color: white;
+    border-radius: 4px;
+    display: grid;
+    grid-area: aside1;
+}
+
+main .main-container .aside-1 ul{
+    list-style: none;
+    padding: 10px;
+}
+
+main .main-container .aside-1 a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+main .main-container .aside-1 a:hover{
+    color: red;
+}
+
+main .main-container section{
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+main .main-container section:hover{
+    box-shadow: 1px 1.5px 1px 1px grey;
+    backdrop-filter: blur(1.5px);
+    cursor: pointer;
+}
+
+section{
+    display: grid;
+}
+
+.product-img{
+    width: 250px;
+    height: 20vh;
+    margin: auto;
+}
+
+main .main-container section h5{
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+main .main-container section p{
+    margin: 5px 0 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+}
+
+main .main-container section .button{
+    /* margin-left: 100px; */
+    margin: 0 auto;
+}
+
+main .main-container section .button button {
+    margin-left: 5px;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main .main-container section button i:hover{
+    color: red;
+}
+
+.section-1{
+    grid-area: product-1;
+}
+
+.section-2{
+    grid-area: product-2;
+}
+
+
+.section-3{
+    grid-area: product-3;
+}
+
+
+.section-4{
+    grid-area: product-4;
+}
+
+.section-5{
+    grid-area: product-5;
+}
+
+.section-6{
+    grid-area: product-6;
+}
+
+.section-7{
+    grid-area: product-7;
+}
+
+.section-8{
+    grid-area: product-8;
+}
+
+.section-9{
+    grid-area: product-9;
+}
+
+.section-10{
+    grid-area: product-10;
+}
+
+.section-11{
+    grid-area: product-11;
+}
+
+.section-12{
+    grid-area: product-12;
+}
+
+.section-13{
+    grid-area: product-13;
+}
+
+.section-14{
+    grid-area: product-14;
+}
+
+.section-15{
+    grid-area: product-15;
+}
+
+.section-16{
+    grid-area: product-16;
+}
+
+.section-17{
+    grid-area: product-17;
+}
+
+.section-18{
+    grid-area: product-18;
+}
+
+.section-19{
+    grid-area: product-19;
+}
+
+.section-20{
+    grid-area: product-20;
+}
+
+.section-21{
+    grid-area: product-21;
+}
+
+.section-22{
+    grid-area: product-22;
+}
+
+.section-23{
+    grid-area: product-23;
+}
+
+.aside-2{
+    grid-area: aside2;
+    padding: 8px;
+    font-size: 30px;
+    background-image: linear-gradient(200deg,black, red);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-2 .social-media a i{
+    margin-bottom: 80px;
+}
+.aside-2 a{
+    color: white;
+    margin-top: 100%;
+}
+
+.aside-2 a:hover{
+    color: red;
+}
+
+.aside-2 .message:hover{
+    color: black;
+}
+
+/* Main end */
+
+
+/* Footer start */
+
+footer{
+    width: 100%;
+    height: 25vh;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px red;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;  
+}
+
+.footer-container .logo a{
+    color: white;
+    font-size: 28px;
+}
+
+.footer-container .kundenservice, .about-big-max, .follow-us{
+    margin-right: 200px;
+}
+
+.footer-container h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-container .footer-p a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container .footer-p a:hover{
+    color: red;
+}
+
+footer .payment-options{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer .payment-options .fa-dhl{
+    font-size: 50px;
+}
+
+footer .payment-options a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+footer .payment-options a i{
+    margin-right: 80px;
+}
+
+footer .payment-options a:hover{
+    color: red;
+}
+
+.copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* Footer end */
+
+/* Mobile */
+
+@media(max-width: 576px){
+
+    body{
+        width: 100vw;
+        padding: 5px;
+        background-image: url(/images/budy.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    header{
+        display: inline-block;
+        width: 100vw;
+        padding: 10px;
+        position: sticky;
+    }
+
+    header .logo {
+        width: 90vw;
+    }
+
+    header .logo a{
+        font-size: 50px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    label[for="hamburger"]{
+        display: block;
+        color: white;
+        font-size: 40px;
+        transform: scale(1.1px);
+        transition: .5s;
+        position: absolute;
+        top: 16px;
+        right: 30px;
+    }
+    
+    #hamburger{
+        position: absolute;
+        top: 40px;
+        right: 0px;
+    }
+    .menu-bar{
+        display: none;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menu-bar ul{
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;
+    }
+
+    .menu-bar ul li{
+        border-bottom: 1px solid black;
+    }
+
+    .menu ul li a{
+        font-size: 30px;
+    }
+
+    input[type="checkbox"]:checked ~ .menu-bar{
+        display: block;
+    }
+
+    .main-container{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap: 10px;
+    }
+
+    label[for="arrow-up"]{
+        display: block;
+        color: white;
+        transform: scale(1.1px);
+        transition: .5s;
+        position: absolute;
+        top: 280px;
+        left: 220px;
+    }
+
+    label[for="arrow-down"]{
+        display: none;
+        color: white;
+        transform: scale(1.1px);
+        transition: .5s;
+        position: absolute;
+        top: 280px;
+        left: 220px;
+    }
+
+    label[for="arrow-down"] i{
+        font-size: 20px;
+    }
+
+    label[for="arrow-up"] i{
+        font-size: 20px;
+    }
+
+    label[for="arrow-up"] i:hover{
+        color: red;
+    } 
+    
+    #arrow-up{
+        position: absolute;
+        top: 40px;
+        right:0px;
+    }
+
+    .article-1{
+        display: none;
+        display: none;
+        height: 25vh;
+    }
+
+    main .main-container .article-1{
+        font-size: 20px;
+    }
+
+    main .main-container .article-1 input{
+        margin-top: 5px;
+        height: 30px;
+    }
+
+    input[type="checkbox"]:checked ~ .article-1{
+        display: block;
+    }
+
+    main .main-container .aside-1 h3, h4{
+        font-size: 20px;
+    }
+
+    main .main-container .aside-1 ul li a{
+        font-size: 15px;
+    }
+
+
+    section{
+        display: grid;
+    }
+
+    main .main-container section h5{
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .product-img{
+        width: 220px;
+        height: 15vh;
+        margin: 10px auto;
+    }
+
+    footer{
+        width: 100%;
+        height: 25vh;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px 1px red;
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: space-around;  
+    }
+    
+    .footer-container .logo a{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .footer-container .kundenservice, .about-big-max, .follow-us{
+        margin-right: 10px;
+    }
+    
+    .footer-container h3{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-container .footer-p a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-container .footer-p a:hover{
+        color: red;
+    }
+    
+    footer .payment-options{
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    footer .payment-options .fa-dhl{
+        font-size: 50px;
+    }
+    
+    footer .payment-options a{
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+    
+    footer .payment-options a i{
+        margin-right: 10px;
+    }
+    
+    footer .payment-options a:hover{
+        color: red;
+    }
+    
+    .copyright{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
+
+    .aside-2{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aside-2 .social-media{
+        margin-top: 20px;
+    }
+
+    .aside-2 .social-media a{
+        margin-left: 30px;
+    }
+
+    .aside-2 .message{
+        display: none;
+    }
+
+}
+
+@media(min-width: 577px) and (max-width: 901px){
+    body{
+        width: 100vw;
+        padding: 5px;
+        background-image: url(/images/budy.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+    header{
+        display: flex;
+        width: 100vw;
+        padding: 20px;
+        position: sticky;
+        justify-content: flex-start;
+        justify-content: space-between;
+    }
+
+    header .logo{
+        width: 15%;
+    }
+
+    header .logo a{
+        font-size: 25px;
+    }
+
+
+    .search-box{
+        display: none;
+        
+    }
+
+    .menu-bar ul{
+        list-style: none;
+        display: flex;
+        
+    }
+
+    .menu-bar ul li{
+        font-size: 1.8rem;
+        margin-left: 20px;
+    }
+    
+    .menu-bar ul li a{
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .menu-bar ul .active{
+        background-color: black;
+        border-radius: 3px;
+    }
+    
+    .menu-bar ul .active .fa-house{
+        margin-right: 4px;
+        font-size: 2rem;
+    }
+    
+    .menu-bar ul li .fa-user{
+        display: none;
+    }
+    
+    .menu-bar ul li:hover{
+        transform: scale(1.1);
+        transition: .5s;
+    }
+    
+    .menu-bar ul li a:hover{
+        color: red;
+    }
+
+    .active{
+        display: none;
+    }
+
+    .main-container{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        color: white;
+        gap: 10px;
+    } 
+
+    .article-1{
+        display: none;
+    }
+
+    main .main-container .aside-1{
+        display: none;
+    }
+
+
+    .aside-2{
+        width: 100vw;
+    }
+
+
+    label[for="arrow-up"], label[for="arrow-down"], input[type="checkbox"]{
+        display: none;
+    }
+
+
+    section{
+        display: grid;
+    }
+
+    main .main-container section h5{
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    footer{
+        width: 100%;
+        height: 25vh;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px 1px red;
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: space-around;  
+    }
+    
+    .footer-container .logo a{
+        color: white;
+        font-size: 40px;
+    }
+    
+    .footer-container .kundenservice, .about-big-max, .follow-us{
+        margin-right: 10px;
+    }
+    
+    .footer-container h3{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-container .footer-p a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-container .footer-p a:hover{
+        color: red;
+    }
+    
+    footer .payment-options{
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    footer .payment-options .fa-dhl{
+        font-size: 50px;
+    }
+    
+    footer .payment-options a{
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+    
+    footer .payment-options a i{
+        margin-right: 10px;
+    }
+    
+    footer .payment-options a:hover{
+        color: red;
+    }
+    
+    .aside-2{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aside-2 .social-media{
+        margin-top: 20px;
+    }
+
+    .aside-2 .social-media a{
+        margin-left: 30px;
+    }
+
+    .aside-2 .message{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

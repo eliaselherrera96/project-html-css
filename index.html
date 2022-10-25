@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>BIGMAX</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">BIG-MAX</a></div>
+        <label for="hamburger">&#9776</label>
+        <input type="checkbox" id="hamburger"/>
+
+        <!-- <ul class="hamburger-menu">
+            This will be a burger checkbox menu
+        </ul> -->
+        
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Suche nach Produkten oder Marken">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+        <nav class="menu-bar">
+            <ul>
+                <li class="active"><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Sign-Up/Login<i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-header">
+            <p class="main-titel">Sports Nutrition</p>
+            <p class="product-number">387-products</p>
+        </div>
+
+        <div class="main-container">
+            <label for="arrow-up"><i class="fa-solid fa-arrow-up"></i></label>
+            <label for="arrow-down"><i class="fa-solid fa-arrow-down"></i></label>
+            <input type="checkbox" id="arrow-up"/>
+            <article class="article-1">
+                <h4>Free shipping for orders over <span>70$</span></h4><br>
+                <label for="sale-code">Enter your sale-code here:</label>
+                <input type="text" placeholder="enter your code">
+            </article>
+
+            <!-- <label for="arrow-up-article-1"><i class="fa-solid fa-arrow-up"></i></label>
+            <input type="checkbox" id="arrow-up"/> -->
+            <aside class="aside-1">
+
+                <h3>Filter:</h3>
+
+                <h4>Sales%:</h4>
+                <nav class="sales-nav">
+                    <ul>
+                        <li><a href="#">60%-69%(2)</a></li>
+                        <li><a href="#">50%-59%(3)</a></li>
+                        <li><a href="#">40%-49%(5)</a></li>
+                        <li><a href="#">30%-39%(4)</a></li>
+                        <li><a href="#">20%-29%(13)</a></li>
+                        <li><a href="#">10%-19%(31)</a></li>
+                        <li><a href="#">0%-9%(41)</a></li>
+                    </ul>
+                </nav>
+
+                <h4>Goal:</h4>
+                <nav class="goal-nav">
+                    <ul>
+                        <li><a href="#">Lose-weight(43)</a></li>
+                        <li><a href="#">Gain-weight(19)</a></li>
+                    </ul>
+                </nav>
+
+                <h4>Opportunity:</h4>
+                <nav class="opportunity-nav">
+                    <ul>
+                        <li><a href="#">Breakfast(63)</a></li>
+                        <li><a href="#">After-workout(101)</a></li>
+                        <li><a href="#">Over-night(11)</a></li>
+                        <li><a href="#">Every-day(236)</a></li>
+                        <li><a href="#">While the training(116)</a></li>
+                        <li><a href="#">Between-meals(83)</a></li>
+                    </ul>
+                </nav>
+
+                <h4>Product Type:</h4>
+                <nav class="product-type-nav">
+                    <ul>
+                        <li><a href="#">powder(124)</a></li>
+                        <li><a href="#">Tablets & Capsules(74)</a></li>
+                        <li><a href="#">Bars(61)</a></li>
+                        <li><a href="#">Gels(30)</a></li>
+                        <li><a href="#">Drinks(123)</a></li>
+                        <li><a href="#">Food & Snacks(39)</a></li>
+                        <li><a href="#">Liquid(79)</a></li>
+                    </ul>
+                </nav>
+
+                <h4>Needs:</h4>
+                <nav class="needs-nav">
+                    <ul>
+                        <li><a href="#">Eye(12)</a></li>
+                        <li><a href="#">Brain(4)</a></li>
+                        <li><a href="#">Joints(2)</a></li>
+                        <li><a href="#">Immune-system(7)</a></li>
+                        <li><a href="#">Bones(11)</a></li>
+                        <li><a href="#">Muscle(39)</a></li>
+                        <li><a href="#">Liquid(79)</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="section-1">
+                <img class="whey-protein product-img" src="/images/img-1.png" alt="">
+                <h5>Whey protein</h5>
+                <p>60$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>    
+            </section>
+            <section class="section-2">
+                <img class="product-img" src="/images/img-2.png"  alt="">
+                <h5>Whey perfection</h5>
+                <p>30$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-3">
+                <img class="product-img" src="/images/img-3.png" alt="">
+                <h5>SYNTHR-E</h5>
+                <p>60$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-4">
+                <img class="product-img" src="/images/img-4.png" alt="">
+                <h5>BF 10</h5>
+                <p>30$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-5">
+                <img class="product-img" src="/images/img-5.png" alt="">
+                <h5>C4</h5>
+                <p>35$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-6">
+                <img class="product-img" src="/images/img-6.png" alt="">
+                <h5>The Cursor Booster</h5>
+                <p>35$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-7">
+                <img class="product-img" src="/images/img-7.png">
+                <h5>ESN Whey protein</h5>
+                <p>35$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-8">
+                <img class="product-img" src="/images/img-8.png" alt="">
+                <h5>ESN Elite Pro Complex</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-9">
+                <img class="product-img" src="/images/img-9.png" alt="">
+                <h5>Protein Chips</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-10">
+                <img class="product-img" src="/images/img-10.png" alt="">
+                <h5>Protein drink</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-11">
+                <img class="product-img" src="/images/img-11.png" alt="">
+                <h5>Mars</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-12">
+                <img class="product-img" src="/images/img-12.png" alt="">
+                <h5>Casein</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-13">
+                <img class="product-img" src="/images/img-13.png" alt="">
+                <h5>MY PROTEIN- Whey protein</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-14">
+                <img class="product-img" src="/images/img-14.png" alt="">
+                <h5>Casein</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-15">
+                <img class="product-img" src="/images/img-15.png" alt="">
+                <h5>PowerBar</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-16">
+                <img class="product-img" src="/images/img-16.png" alt="">
+                <h5>Snickers</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-17">
+                <img class="product-img" src="/images/img-17.png" alt="">
+                <h5>Weider casein</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-18">
+                <img class="product-img" src="/images/img-18.png" alt="">
+                <h5>Weider Protein drink</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-19">
+                <img class="product-img" src="/images/img-19.png" alt="">
+                <h5>Weider Protein plus</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-20">
+                <img class="product-img" src="/images/img-20.png" alt="">
+                <h5>WellMix bar</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-21">
+                <img class="product-img" src="/images/img-21.png" alt="">
+                <h5>Whey Isolate</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-22">
+                <img class="product-img" src="/images/img-7.png" alt="">
+                <h5>ESN Whey Protein</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+            <section class="section-23">
+                <img class="product-img" src="/images/img-8.png" alt="">
+                <h5>ESN Elite Pro Complex</h5>
+                <p>40$</p>
+                <div class="button">
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <button>0</button>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </section>
+
+            <aside class="aside-2">
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a class="message" href="#"><i class="fa-solid fa-message" title="Chat with us!"></i></a>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="logo"><a href="index.html">BIG-MAX</a></div>
+            <div class="kundenservice">
+                <h3>Customer Service</h3>
+                <p class="footer-p"><a href="#">FAQ</a></p>
+                <p class="footer-p"><a href="#">Shipping</a></p>
+                <p class="footer-p"><a href="#">Payment options</a></p>
+            </div>
+
+            <div class="about-big-max">
+                <h3>About BIG-MAX</h3>
+                <p class="footer-p"><a href="#">About Big-Max</a></p>
+                <p class="footer-p"><a href="#">Brand overview</a></p>
+                <p class="footer-p"><a href="#">Cookies</a></p>
+                <p class="footer-p"><a href="#">Privacy</a></p>
+                <p class="footer-p"><a href="#">Refer Friends</a></p>
+            </div>
+
+            <div class="follow-us">
+                <h3>Follow US</h3>
+                <p class="footer-p"><a href="#">Instagram</a></p>
+                <p class="footer-p"><a href="#">Facebook</a></p>
+                <p class="footer-p"><a href="#">Youtube</a></p>
+                <p class="footer-p"><a href="#">Newsletter</a></p>
+            </div>
+
+        </div>
+
+        <div class="payment-options">
+            <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href="#"><i class="fa-brands fa-paypal"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+            <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+            <a href="#"><i class="fa-brands fa-dhl"></i></a>
+        </div>
+
+    </footer>
+    <p class="copyright">Copyright &copy; 2007 GIG-MAX.All Rights Reserved</p>
+
+</body>
+</html>
